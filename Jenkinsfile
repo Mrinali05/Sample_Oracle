@@ -1,4 +1,4 @@
-def jenkins_path = '/var/lib/jenkins'
+
    
     pipeline {
     agent any
