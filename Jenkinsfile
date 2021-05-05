@@ -8,7 +8,7 @@ def jenkins_path = '/var/lib/jenkins'
         stage('Build') {
             steps {
                 sh """
-        build_id=`wget -qO- $jenkins_path/job/job_name/lastSuccessfulBuild/buildNumber`
+        build_id = build.getProject().getLastSuccessfulBuild()
         echo $build_id
         """
             }
