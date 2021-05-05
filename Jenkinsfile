@@ -8,7 +8,7 @@
         stage('Build') {
             steps {
                 sh """
-        build_id = build.getProject().getLastSuccessfulBuild()
+        build_id='wget -qO- http://10.200.8.83:8080/job/first_pipeline/lastSuccessfulBuild/buildNumber'
         echo $build_id
         """
             }
