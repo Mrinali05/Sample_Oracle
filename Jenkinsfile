@@ -14,3 +14,4 @@ def jenkins_path = '/var/lib/jenkins'
             }
         }  
     }
+    }
